@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; /* Cała wysokość widoku */ 
+    background-color: #f0f0f0; /* Tło strony */
+    font-family: Arial, sans-serif;
+}
+
+
+.comic-container {
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 100%; /* Kontener nie przekracza szerokości ekranu */
+}
+
+/* Styl dla pojedynczej klatki */
+.single-frame img {
+    max-width: 600px; /* Ogranicz szerokość pojedynczej klatki */
+    width: 100%; /* Dostosuj się do kontenera */
+    height: auto; /* Zachowaj proporcje */
+    border: 2px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styl dla dwóch klatek obok siebie */
+.double-frame {
+    display: flex; /* Ustawiamy flexbox do układania klatek obok siebie */
+    justify-content: center;
+    gap: 10px; /* Odstęp między klatkami */
+    max-width: 1200px; /* Ogranicz szerokość kontenera dla dwóch klatek */
+    width: 100%; /* Dostosuj się do ekranu */
+}
+
+.double-frame img {
+    max-width: 50%; /* Każda klatka zajmuje połowę szerokości kontenera */
+    width: 100%; /* Dostosuj się do kontenera */
+    height: auto; /* Zachowaj proporcje */
+    border: 2px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.task-section {
+    margin-top: 20px;
+    padding: 20px;
+	width:400px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none; /* Sekcja zadań jest początkowo ukryta */
+}
+
+.task {
+    margin-bottom: 20px;
+}
+
+.task h2 {
+    margin-top: 0;
+}
+
+.task .question {
+    margin-bottom: 15px;
+}
+
+.task input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+
+.task button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8FBC8F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.task button:hover {
+    background-color: #90EE90;
+}
+
+.task .result-message {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+.hint-message {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+    display: none; /* Podpowiedź jest początkowo ukryta */
+}
+
+
+.button-container {
+    text-align: center;
+}
+
+.nav-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #8FBC8F;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px; /* Odstęp między przyciskami */
+}
+
+.nav-button:hover {
+    background-color: #90EE90;
+}
+
+.nav-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.matrix-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.matrix-input {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.matrix-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.subtasks-container {
+    margin-bottom: 20px;
+}
+
+.subtask {
+    margin-bottom: 20px;
+}
+
+.subtask p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subtask input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}

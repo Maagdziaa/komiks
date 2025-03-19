@@ -1,0 +1,37 @@
+*{
+	padding:10px;
+}
+
+p{
+    font-size: 30px;
+    text-align: center;
+	font-family: math;
+}
+img{
+    margin:0 auto;
+    display:block;
+}
+
+.button-container {
+    text-align: center; /* Wyśrodkowanie przycisku w poziomie */
+	align-items: center;
+}
+
+.start-button {
+    padding: 20px 40px; /* Wewnętrzny odstęp (większy dla efektu) */
+    font-size: 24px; /* Rozmiar czcionki */
+    font-weight: bold; /* Pogrubienie tekstu */
+    color: white; /* Kolor tekstu */
+    background-color: #8FBC8F; /* Kolor tła przycisku */
+    border: none; /* Usunięcie domyślnej ramki */
+    border-radius: 8px; /* Zaokrąglenie rogów */
+    cursor: pointer; /* Kursor wskazujący */
+    justify-content: center;
+    align-items: center;
+	text-decoration: none; /* Usunięcie podkreślenia linku */
+    display: inline-block; /* Aby link zachowywał się jak przycisk */
+}
+
+.start-button:hover {
+    background: #90EE90; /* Kolor tła po najechaniu myszką */
+}

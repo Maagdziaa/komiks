@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="komiks.css">
+	<link rel="icon" type="image/png" href="favicon.png">
+    <title>Komiks matematyczny o macierzach</title>
+</head>
+<body>    
+    <div class="comic-container">
+	</div>
+	<div id="task-section" class="task-section">
+         <div id="task-1" class="task">
+            <h2>Zadanie 1</h2>
+			<p>Odpowiedź podaj w formie "axb".</p>
+            <form class="quiz-form">
+                <div class="question" data-correct-answer="3x3">
+                    <h4>a)</h4>
+                    <input type="text" id="task-1-answer-1" placeholder="Wpisz odpowiedź">
+                </div>
+                <div class="question" data-correct-answer="1x3">
+                    <h4>b)</h4>
+                    <input type="text" id="task-1-answer-2" placeholder="Wpisz odpowiedź">
+                </div>
+				 <div class="question" data-correct-answer="3x1">
+                    <h4>c)</h4>
+                    <input type="text" id="task-1-answer-3" placeholder="Wpisz odpowiedź">
+                </div>
+				 <div class="question" data-correct-answer="2x3">
+                    <h4>d)</h4>
+                    <input type="text" id="task-1-answer-4" placeholder="Wpisz odpowiedź">
+                </div>
+				 <div class="question" data-correct-answer="2x2">
+                    <h4>e)</h4>
+                    <input type="text" id="task-1-answer-5" placeholder="Wpisz odpowiedź">
+                </div>
+            </form>
+			<button type="button" class="submit-answers">Sprawdź odpowiedzi</button>
+			<button id="hint-button-1" class="hint-button">Podpowiedź</button>
+			<p id="hint-message-1" class="hint-message"></p> <!-- Tutaj pojawi się podpowiedź -->
+            <p class="result-message"></p>
+        </div>
+
+
+        <div id="task-2" class="task">
+            <h2>Zadanie 2</h2>
+			<p>Przykładowa odpowiedź: "macierz diagonalna".</p>
+            <form class="quiz-form">
+                <div class="question" data-correct-answer="macierz zerowa">
+                    <h4>a)</h4><p> Macierz, złożona z samych zer to ...</p>
+                    <input type="text" id="task-2-answer-1" placeholder="Wpisz odpowiedź">
+                </div>
+                <div class="question" data-correct-answer="macierz kwadratowa">
+                    <h4>b)</h4> <p>Macierz, która ma taką samą liczbę wierszy i kolumn to ...</p>
+                    <input type="text" id="task-2-answer-2" placeholder="Wpisz odpowiedź">
+                </div>
+				<div class="question" data-correct-answer="macierz jednostkowa">
+                    <h4>c)</h4> <p> Macierz, która poza główną przekątną ma same zera i dodatkowo cyframi na głównej przekątnej są same jedynki, to ...</p>
+                    <input type="text" id="task-2-answer-2" placeholder="Wpisz odpowiedź">
+                </div>
+				<div class="question" data-correct-answer="trójkątna górna">
+                    <h4>d)</h4> <p> Macierz ... to taka, która poniżej głównej przekątnej ma same zera.</p>
+                    <input type="text" id="task-2-answer-2" placeholder="Wpisz odpowiedź">
+                </div>
+                <button type="button" class="submit-answers">Sprawdź odpowiedzi</button>
+				<button id="hint-button-2" class="hint-button">Podpowiedź</button>
+				<p id="hint-message-2" class="hint-message"></p> 
+            </form>
+            <p class="result-message"></p>
+        </div>
+
+        <div id="task-3" class="task">
+            <h2>Zadanie 3</h2>
+			<p>Jeśli działanie nie może być wykonane, napisz "operacja niemożliwa".</p>
+				<div class="subtasks-container"></div> 
+				<button type="button" class="submit-answers">Sprawdź odpowiedzi</button>
+				<button id="hint-button-3" class="hint-button">Podpowiedź</button>
+				<p id="hint-message-3" class="hint-message"></p> 
+            <p class="result-message"></p>
+        </div>
+		<div id="task-4" class="task">
+            <h2>Zadanie 4</h2>
+				<div class="subtasks-container"></div> 
+				<button type="button" class="submit-answers">Sprawdź odpowiedzi</button>
+				<button id="hint-button-4" class="hint-button">Podpowiedź</button>
+				<p id="hint-message-4" class="hint-message"></p> 
+            <p class="result-message"></p>
+        </div>
+       <div id="task-5" class="task">
+            <h2>Zadanie 5</h2>
+			<p>Jeśli działanie nie może być wykonane, napisz "operacja niemożliwa".</p>
+				<div class="subtasks-container"></div> 
+				<button type="button" class="submit-answers">Sprawdź odpowiedzi</button>
+				<button id="hint-button-5" class="hint-button">Podpowiedź</button>
+				<p id="hint-message-5" class="hint-message"></p> 
+            <p class="result-message"></p>
+        </div>
+        <div id="task-6" class="task">
+            <h2>Zadanie 6</h2>
+			<p>Jako odpowiedź podaj liczbę np. "-2".</p>
+            <form class="quiz-form">
+                <div class="question" data-correct-answer="10">
+                    <h4>a)</h4>
+                    <input type="text" id="task-6-answer-1" placeholder="Wpisz odpowiedź">
+                </div>
+                <div class="question" data-correct-answer="-50">
+                    <h4>b)</h4>
+                    <input type="text" id="task-6-answer-2" placeholder="Wpisz odpowiedź">
+                </div>
+				 <div class="question" data-correct-answer="0">
+                    <h4>c)</h4>
+                    <input type="text" id="task-6-answer-3" placeholder="Wpisz odpowiedź">
+                </div>
+				 <div class="question" data-correct-answer="1">
+                    <h4>d)</h4>
+                    <input type="text" id="task-6-answer-4" placeholder="Wpisz odpowiedź">
+                </div>
+            </form>
+			<button type="button" class="submit-answers">Sprawdź odpowiedzi</button>
+			<button id="hint-button-6" class="hint-button">Podpowiedź</button>
+			<p id="hint-message-6" class="hint-message"></p> 
+            <p class="result-message"></p>
+        </div>
+		<div id="task-7" class="task">
+            <h2>Zadanie 7</h2>
+			<p>Jeśli macierz nie może mieć macierzy odwrotnej, napisz "nie istnieje".</p>
+			<p>Jeśli pojawią się ułamki, napisz np. "1/2".</p>
+				<div class="subtasks-container"></div> 
+				<button type="button" class="submit-answers">Sprawdź odpowiedzi</button>
+				<button id="hint-button-7" class="hint-button">Podpowiedź</button>
+				<p id="hint-message-7" class="hint-message"></p> 
+            <p class="result-message"></p>
+        </div>
+		<div id="task-8" class="task">
+            <h2>Zadanie 8</h2>
+			<p>Używaj odpowiedzi "układ nieoznaczony", "układ sprzeczny" lub "układ oznaczony, x=1,y=1,z=1".</p>
+				<form class="quiz-form">
+                <div class="question" data-correct-answer="układ nieoznaczony">
+                    <h4>a)</h4>
+                    <input type="text" id="task-8-answer-1" placeholder="Wpisz odpowiedź">
+                </div>
+                <div class="question" data-correct-answer="układ oznaczony, x=2,y=3,z=-1">
+                    <h4>b)</h4>
+                    <input type="text" id="task-8-answer-2" placeholder="Wpisz odpowiedź">
+                </div>
+				 <div class="question" data-correct-answer="układ sprzeczny">
+                    <h4>c)</h4>
+                    <input type="text" id="task-8-answer-3" placeholder="Wpisz odpowiedź">
+                </div>
+				 <div class="question" data-correct-answer="układ oznaczony, x=4,y=-2,z=0,t=1">
+                   <h4>d)</h4>
+                    <input type="text" id="task-8-answer-4" placeholder="Wpisz odpowiedź">
+                </div>
+            </form>
+				<button type="button" class="submit-answers">Sprawdź odpowiedzi</button>
+				<button id="hint-button-8" class="hint-button">Podpowiedź</button>
+				<p id="hint-message-8" class="hint-message"></p> 
+            <p class="result-message"></p>
+        </div>
+    </div>
+	<div class="button-container">
+		<button id="prev-button" class="nav-button">Wstecz</button>
+        <button id="next-button" class="nav-button">Dalej</button>
+    </div>
+	
+	
+	
+    <script src="praca.js"></script>
+    
+    
+</body>
+</html>
